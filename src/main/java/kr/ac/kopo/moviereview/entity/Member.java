@@ -1,9 +1,6 @@
 package kr.ac.kopo.moviereview.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -11,7 +8,8 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@ToString(exclude = "m_member")
+@ToString
+@Table(name = "m_member")
 public class Member extends BaseEntity{
 
     @Id

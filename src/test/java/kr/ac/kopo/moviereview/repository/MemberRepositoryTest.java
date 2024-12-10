@@ -40,7 +40,7 @@ public class MemberRepositoryTest {
                 .mid(mid)
                 .build();
 
-        reviewRepository.deleteByMemeber(member);
+        reviewRepository.deleteByMember(member);
         memberRepository.deleteById(mid);
 
 

@@ -58,6 +58,10 @@
             Review Register
         </button>
 
+        <button type="button" class="btn btn-success getListBtn">
+            list
+        </button>
+
         <div class="list-group reviewList">
 
         </div>
@@ -153,6 +157,11 @@
                     $(".reviewSaveBtn").show();
 
                     reviewModal.modal('show');
+                });
+
+
+                $(".getListBtn").click(function () {
+                    window.location.href = "http://localhost:8080/movie/list";
                 });
 
 

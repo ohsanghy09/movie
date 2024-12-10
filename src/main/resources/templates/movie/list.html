@@ -22,6 +22,7 @@
             <thead>
             <tr>
                 <th scope="col">#</th>
+                <th scope="col">title</th>
                 <th scope="col">Review Count</th>
                 <th scope="col">AVG Rating</th>
                 <th scope="col">Regdate</th>
@@ -36,6 +37,7 @@
                     </a>
                 </th>
                 <td><b>[[${dto.reviewCnt}]]</b></td>
+                <td><b>[[${dto.title}]]</b></td>
                 <td><b>[[${dto.avg}]]</b></td>
                 <td>[[${#temporals.format(dto.regDate, 'yyyy/MM/dd')}]]</td>
             </tr>

@@ -22,7 +22,4 @@ public class MovieImage {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Movie movie;
-
-
-
 }

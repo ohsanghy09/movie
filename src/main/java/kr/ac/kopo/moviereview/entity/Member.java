@@ -1,5 +1,6 @@
 package kr.ac.kopo.moviereview.entity;
 
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,12 +14,10 @@ import lombok.*;
 public class Member extends BaseEntity{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 1씩 자동증가(auto-increment)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long mid;
 
     private String email;
     private String pw;
     private String nickname;
-
-
 }

@@ -15,10 +15,9 @@ import lombok.*;
 public class Movie extends BaseEntity{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 1씩 자동증가(auto-increment)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long mno;
 
-    private String title;
-
+    private  String title;
 
 }

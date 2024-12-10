@@ -19,6 +19,7 @@ public class MovieImage {
     private String imgName;
 
     private String path;
+    // hello
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Movie movie;
